@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+<meta charset='UTF-8'>
+<title>css box sizing</title>
+<style>
+#div1{
+background-color:springgreen;
+width:30%;
+}
+
+#div2{
+background-color:royalblue;
+width:50%;
+}
+
+#div3{
+background-color:orange;
+width:20%;
+}
+
+#div1,#div2,#div3{
+float:left;
+border: 5px solid peru;
+box-sizing:border-box;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Właściwości CSS box-sizing</h1>
+
+<div id='div1'>
+Był wpół żydem,
+wpół Polakiem, wpół Jakubinem,<br>
+wpół żakiem, wpół cywilnym, wpół żołdakiem,
+lecz zato całym łajdakiem.
+</div>
+
+<div id='div2'>
+Dziesięć bałwanków było w jednym lesie, ni mniej, ni więcej, tylko właśnie 10.<br>
+Jeden się drapał do dziupli na drzewie i tak się zdrapał, że zostało 9.<br>
+Dziewięć bałwanków stało na polanie, dokładnie dziewięć, bałwan przy bałwanie.<br>
+Lecz jeden poczuł, że go kręci w nosie. Jak zaczął kichać, to zostało 8.<br>
+Osiem bałwanów stało w dalszym ciągu,lecz jeden bał się mrozu i przeciągów.<br>
+Więc włożył kożuch i okrył się pledem.Jak go odkryli, to już było 7.<br>
+Z siedmiu bałwanków jeden zaraz orzekł, że się poślizgać warto na jeziorze.<br>
+Lecz ledwie zdążył na jezioro wleźć,wpadł w taki poślizg, że zostało 6.<br>
+Tych sześć bałwanków stałoby do teraz,lecz jeden bałwan zaczął się rozbierać.<br>
+Chciał się ochłodzić, miał na kąpiel chęć-jak się rozebrał, to zostało 5.<br>
+Z pięciu bałwanów jeden zaraz ubył,bo go ciekawość przywiodła do zguby.<br>
+Nie wiedział, po co są kaloryfery-jak się dowiedział, to zostały 4.<br>
+Cztery bałwany stały w dwuszeregu,lecz jeden zaczął tupać na kolegów.<br>
+Tupał i tupał, bo był strasznie zły,i tak się stupał, że zostały 3.<br>
+Te trzy bałwanki długo nie postały,bo jeden bałwan znał świetne kawały.<br>                             
+Z własnych dowcipów śmiał się:- Cha! Cha! Cha! i pękł ze śmiechu, i zostały 2.<br>
+A jak została tych bałwanów dwójka,to się zaczęła między nimi bójka.<br>
+Dziesięć bałwanków stało na polanie.Ile zostało? Oto jest pytanie!<br>
+</div>
+
+<div id='div3'>
+Był raz sobie mały knotek, pięści miał jak młotek i zaciskał je bez przerwy, bo go ponosiły nerwy.
+</div>
+</body>
+</html>
