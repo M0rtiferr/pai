@@ -6,11 +6,11 @@
 <style></style>
 <body>
 
-<h1>Metoda windows.alert</h1>
+<h1>Metoda windows.confirm</h1>
 
 <p class='p_omowienie'>
 Wywołanie metody alert ma postać<br>
-window.alert ('tu wpisz powiadomienie dla uzytkownika')<br>
+window.confirm ('tu wpisz powiadomienie dla uzytkownika')<br>
 Powiadomienie dla użytkownika mozna łamać na linie za pomocą sekwencji:\n.
 <br>
 Nie wstawiaj spacji przed i po \n.
