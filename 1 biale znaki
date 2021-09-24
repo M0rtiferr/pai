@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>1 Biale znaki</title>
+<link rel='stylesheet' type='text/css' bref='../calosc.css'>
+<style></style>
+</head>
+<body>
+
+<h1>Interpretacja białych znaków</h1>
+
+<div class='div_temat'>
+<h2>Czym w HTML są białe znaki?</h2>
+
+<p class='p_omowienie'>
+Białe znaki to: spacja, tabulator, przełamanie linii (np. po naciśnięciu klawisza Enter).
+</p>
+<hr>
+
+<h2>Domyślna interpretacja białych znaków w elementach p i pre</h2>
+
+<p class='p_omowienie'>
+W oknie przeglądarki ciąg białych znaków występujący w treści elementu p jest wyświetlany jako jedna spacja.
+</p>
+
+<p class='p_omowienie'>
+Zawartość elementu p (paragrafu):
+</p>
+
+<pre class='pre_rzeczywisty'>
+&lt;p&gt; 
+
+Leciała
+	przepiórka			pogubiła
+	
+piórka.		Marcinek 	je   znalazł
+	i   pozbierał 					znalazł
+&lt;/p&gt;
+<pre>
+</body>
+</html>
