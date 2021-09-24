@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>instrukcja warunkowa if</title>
+<link rel='stylesheet' type='text/css' href='../calosc.css'>
+<style> 
+pre{
+	margin-left:1cm;
+}
+</style>
+</head>
+
+<body>
+<h1> Instrukcja warunkowa if </h1>
+
+<p class='p_omowienie'>Instrukcja warunkowa if bez słowa kluczowego else pozwala na warunkowe wykonanie tylko jednej instrukcji.</p>
+<p class='p_omowienie'>Gdy chcesz warunkowo wykonać instrukcję nazwaną tutaj insT, to możesz stosować taką postać instrukcji warunkowej if: </p>
+<p class='p_omowienie'>Abstrakcyjna postać instrukcji warunkowej if jest następująca: </p>
+
+
+<pre>
+if(warunekIF)
+   InstrukcjaIfTak
+InstrukcjaNast
+</pre>
+</body>
+</html>
