@@ -88,6 +88,7 @@ piórka.		Marcinek 	je   znalazł
 
 <p class='p_omowienie'>
 jest w oknie przeglądarki wyswietlana tak:
+</p>
 
 <pre class='pre_wynik'>
 
@@ -97,6 +98,11 @@ Leciała
 piórka.		Marcinek 	je   znalazł
 	i   pozbierał 				   zaraz.
 </pre>
+<hr>
+
+<p class='p_omowienie'>
+W oknie przeglądarki ciąg białych poprzedzający pierwszy widoczny znak w elemencie p nie jest wyświetlany.
+</p>
 
 </body>
 </html>
