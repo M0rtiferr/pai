@@ -4,7 +4,19 @@
 <meta charset="utf-8">
 <title>1 Biale znaki</title>
 <link rel='stylesheet' type='text/css' href='../calosc.css'>
-<style></style>
+<style>
+.pre_rzeczywisty{
+	background-color:rgb(100,100,225);
+}
+.p_wynik,.pre_wynik{
+	background-color:rgb(100,100,175);
+	border:1px solid blue;
+}
+.pre_rzeczywisty,.p_wynik{
+	margin-left:1cm;
+	margin-right:1cm;
+}
+</style>
 </head>
 <body>
 
