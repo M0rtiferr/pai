@@ -66,9 +66,37 @@ piórka.		Marcinek 	je   znalazł
 </p>
 <hr>
 
-<p class='p omowienie'>
+<p class='p_omowienie'>
 W oknie przeglądarki białe znaki występujące w treści elementu pre są 
 wyświetlane zgodnie z swoim znaczeniem.
+</p>
+
+<p class='p_omowienie'>
+Zawartość elementu pre:
+</p>
+
+<pre class='pre_rzeczywisty'>
+&lt;pre&gt; 
+
+Leciała
+	przepiórka			pogubiła
+	
+piórka.		Marcinek 	je   znalazł
+	i   pozbierał 				   zaraz.
+&lt;/pre&gt;
+</pre>
+
+<p class='p_omowienie'>
+jest w oknie przeglądarki wyswietlana tak:
+
+<pre class='pre_wynik'>
+
+Leciała
+	przepiórka			pogubiła
+	
+piórka.		Marcinek 	je   znalazł
+	i   pozbierał 				   zaraz.
+</pre>
 
 </body>
 </html>
