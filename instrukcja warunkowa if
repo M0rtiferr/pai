@@ -35,5 +35,13 @@ else
 InstrukcjaNast
 </pre>
 
+<p class='p_omowienie'>
+1. Sprawdzam warunek warunekIF. Jezeli jest prawdziwy to przchodzę do punktu 2, w przeciwnym razie przechodzę do punktu 3.<br>
+2. Wykonuję instrukcję InstrukcjaIfTak.<br>
+3. Instrukcja wyboru if kończy działanie.<br>
+4. Wykonuję instrukcję InstrukcjaNast 
+</p>
+
+
 </body>
 </html>
