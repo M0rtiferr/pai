@@ -19,9 +19,7 @@
 <th>Piątek</th>
 </tr>
 </thread>
-
 <tbody>
-
 <tr> <!-- 1 godzina !-->
 	<td>7<sup>45</sup> - 8<sup>30</sup></td>
 	<td>Matematyka</td>
@@ -30,16 +28,14 @@
 	<td>Fizyka</td>
 	<td>W-F</td>
 </tr>
-
 <tr> <!-- 2 godzina !-->
 	<td>8<sup>35</sup> - 9<sup>20</sup></td>
 	<td>Biologia</td>
 	<td>Historia</td>
 	<td>Angielski</td>
-	<td></td>
+	<td>Informatyka</td>
 	<td>W-F</td>
 </tr>
-
 <tr> <!-- 3 godzina !-->
 	<td>9<sup>25</sup> - 10<sup>05</sup></td>
 	<td>Angielski</td>
@@ -48,16 +44,15 @@
 	<td>Chemia</td>
 	<td>Biologia</td>
 </tr>
-
 <tr> <!-- 4 godzina !-->
 	<td>10<sup>20</sup> - 11<sup>05</sup></td>
 	<td>Matematyka</td>
 	<td>Polski</td>
 	<td>Niemiecki</td>
-	<td></td>
-	<td>Fizyka</td>
-
-</tr> <!-- 5 godzina !-->
+	<td>Religia</td>
+	<td>Muzyka</td>
+</tr> 
+<tr> <!-- 5 godzina !-->
 	<td>11<sup>20</sup> - 12<sup>05</sup></td>
 	<td>Matematyka</td>
 	<td>Informatyka</td>
@@ -65,7 +60,6 @@
 	<td>Plastyka</td>
 	<td>Fizyka</td>
 </tr>
-
 </tbody>
 </body>
 </html>
