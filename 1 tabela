@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>1tabela</title>
+<style></style>
+</head>
+</body>
+
+<table>
+<thread>
+<caption> Mój plan lekcji </caption>
+<tr>
+<th>Poniedziałek</th>
+<th>Wtorek</th>
+<th>Środa</th>
+<th>Czwartek</th>
+<th>Piątek</th>
+</tr>
+</thread>
+
+<tbody>
+<tr> <!-- 1 godzina !-->
+	<td>Matematyka</td>
+	<td>Polski</td>
+	<td>Niemiecki</td>
+	<td>Fizyka</td>
+	<td>W-F</td>
+</tr>
+
+<tr> <!-- 2 godzina !-->
+	<td>Biologia</td>
+	<td>Historia</td>
+	<td>Angielski</td>
+	<td></td>
+	<td>W-F</td>
+</tr>
+
+<tr> <!-- 3 godzina !-->
+	<td>Angielski</td>
+	<td>Polski</td>
+	<td>Rosyjski</td>
+	<td>Chemia</td>
+	<td>Biologia</td>
+</tr>
+
+<tr> <!-- 4 godzina !-->
+	<td>Matematyka</td>
+	<td>Polski</td>
+	<td>Niemiecki</td>
+	<td></td>
+	<td>Fizyka</td>
+
+</tr> <!-- 5 godzina !-->
+	<td>Matematyka</td>
+	<td>Informatyka</td>
+	<td>Niemiecki</td>
+	<td>Plastyka</td>
+	<td>Fizyka</td>
+</tr>
+
+</tbody>
+</body>
+</html>
