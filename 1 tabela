@@ -3,11 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>1tabela</title>
-<style></style>
+
+<style>  
+
+#tabela1{
+border:4px dotted royalblue;
+}
+		
+</style>
+
 </head>
 </body>
 
-<table>
+<table id='tabela1'>
 <thread>
 <caption> Mój plan lekcji </caption>
 <tr>
@@ -60,6 +68,7 @@
 	<td>Plastyka</td>
 	<td>Fizyka</td>
 </tr>
+</table>
 </tbody>
 </body>
 </html>
