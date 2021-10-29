@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+<meta charset='UTF-8'>
+<title>scalanie komórek</title>
+<style>
+table{
+border:4px solid black; 
+border-collapse: collapse;
+width:25%px;
+}
+
+td{
+border:2px solid black;
+text-align:center;
+width:25%;
+}
+</style>
+</head>
+<body>
+<table>
+<thread> 
+<tr>
+<td colspan='2'>1_1</td>
+<td>1_3</td>
+<td>1_4</td>
+</tr>
+<tr>
+<td>2_1</td>
+<td colspan='2'>2_2</td>
+<td>2_4</td>
+</tr>
+<tr>
+<td colspan='3'>3_1</td>
+<td>3_4</td>
+</tr>
+<tr>
+<td colspan='4'>4_1</td>
+
+</tr>
+</table>
+</body>
+</html>
