@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>width</title>
+<link rel='stylesheet' type='text/css' href='../calosc.css'>
+<style></style>
+</head>
+<body>
+<h1>Wartości właściwości width</h1>
+<ol class='ol_bez'> 
+<li>Jednostki metryczne:<br><br>
+<ol class='ol_w1'>
+<li>milimetr(mm)</li>
+<li>centymetr(cm)</li>
+<li>cal(in)</li>
+</ol>
+<br>
+</li>
+
+<li>Jednostki typograficzne:<br><br>
+<ol class='ol_w1'>
+<li>punkty (pt)</li>
+<li>pica (pc)</li>
+<li>cycero (cy)</li>
+</ol>
+</li>
+
+
+</ol>
+</body>
+</html> 
