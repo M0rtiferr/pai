@@ -4,29 +4,106 @@
 <meta charset='utf-8'>
 <title>width</title>
 <link rel='stylesheet' type='text/css' href='../calosc.css'>
-<style></style>
+<style>
+
+div{
+margin-bottom:10px;
+}
+
+#mm{
+background-color:beige;
+width:100mm;
+height:50mm;
+}
+
+#cm{
+background-color:orange;
+width:10cm;
+height:5cm;
+}
+
+#in{
+background-color:purple;
+width:4in;
+height:2in;
+}
+
+#pt{
+background-color:teal;
+width:72pt;
+height:36pt;
+}
+
+#pc{
+background-color:royalblue;
+width:6pc;
+height:3pc;
+}
+
+#cc{
+background-color:springgreen;
+width:6cc;
+height:3cc;
+}
+</style>
 </head>
 <body>
 <h1>Wartości właściwości width</h1>
 <ol class='ol_bez'> 
-<li>Jednostki metryczne:<br><br>
-<ol class='ol_w1'>
-<li>milimetr(mm)</li>
-<li>centymetr(cm)</li>
-<li>cal(in)</li>
-</ol>
-<br>
-</li>
+	<li><br>Jednostki metryczne:<br><br>
+	<ol class='ol_w1'>
+	<li>milimetr(mm)</li>
+	<li>centymetr(cm)</li>
+	<li>cal(in)</li>
+	</ol>
+	<br>
+	</li>
 
-<li>Jednostki typograficzne:<br><br>
-<ol class='ol_w1'>
-<li>punkty (pt)</li>
-<li>pica (pc)</li>
-<li>cycero (cy)</li>
-</ol>
-</li>
+	<li>Jednostki typograficzne:<br><br>
+	<ol class='ol_w1'>
+	<li>punkty (pt)</li>
+	<li>pica (pc)</li>
+	<li>cycero (cy)</li>
+	</ol>
+	</li>
+	<br>
 
+	<li>Jednostki związane z wyświetlaniem na ekranie:<br><br>
+	<ol class='ol_w1'>
+	<li>piksel (px)</li>
+	</ol>
+	</li>
+	<br>
+	
+	<li>Jednostki związane z rozmiarem czcionki:<br><br>
+	<ol class='ol_w1'>
+	<li>wysokość wielkiej litery M obowiązującej czcionki (em)</li>
+	<li>szerokość małej litery x obowiązującej czcionki (ex)</li>
+	</ol>
+	</li>
+	<br>
 
+	<li>Procent:<br><br>
+	<ol class='ol_w1'>
+	<li>szerokość obszaru zawartości rodzica elementu  (%)</li>
+	</ol>
+	</li>
+	<br>
+
+	<li>Automatyczna albo niepodana:<br><br>
+	<ol class='ol_w1'>
+	<li>całkowita szerokośc elementu wypełnia szerokość obszaru zawartości rodzica elementu  (auto)</li>
+	</ol>
+	<br>
+	</li>
 </ol>
+
+<div id='mm'></div>
+<div id='cm'></div>
+<div id='in'></div>
+<div id='pt'></div>
+<div id='pc'></div>
+<div id='cc'></div>
+	
 </body>
 </html> 
