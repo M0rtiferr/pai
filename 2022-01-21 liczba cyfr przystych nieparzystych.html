@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang='pl'>
+<head>
+<meta charset='UTF-8'>
+<title>
+ 
+</title>
+
+<style>
+
+</style>
+</head>
+<body>
+<p>
+Wyznaczyć liczbę cyfr parzystych i nieparzystych najwiekszej bezpiecznej liczby całkowitej dodatniej Number.MAX_SAFE_INTEGER.
+Nie przeprowadzać konwersji na ciąg znaków.
+</p>
+
+<script>
+//sposob 1
+'use strict'
+let x= Number.MAX_SAFE_INTEGER, liczba_cyfr_parzystych = 0, liczba_cyfr_nieparzystych = 0, reszta ;
+x = 908744111;
+document.write('x= ',x,'<br>');
+
+if (x==0){
+	document.write('liczba ma jedną cyfrę parzystą 0');
+	}
+	else{
+	while(x>0){
+	reszta = x%10;
+	if ((reszta % 2  ) == 0){
+	liczba_cyfr_parzystych++;
+	}
+	else{ 
+	liczba_cyfr_nieparzystych++;
+	}
+	x=(x - reszta)/10;
+	}
+	document.write('Liczba cyfr przystych jest równa = ',liczba_cyfr_parzystych, 
+	'<br>', 'Liczba cyfr nieparzystych jest równa = ',liczba_cyfr_nieparzystych);
+	}
+</script>
+<p>
+Wyznaczyć liczbę cyfr parzystych i nieparzystych najwiekszej bezpiecznej liczby całkowitej dodatniej Number.MAX_SAFE_INTEGER.
+Przeprowadzić konwersje na ciągu znaków.
+</p>
+<script>
+{
+//sposob 2
+'use strict'
+let x= Number.MAX_SAFE_INTEGER, liczba_cyfr_parzystych = 0, liczba_cyfr_nieparzystych = 0, reszta, d, i ;
+x = 908744111;
+//x +=' ';
+x= x.toString();
+d = x.length;
+document.write('x= ',x,'<br>');
+for(i=0; i<= d-1; i++){
+	// za pomocą + konwertuje napis przechwujący liczbę	
+	reszta = (+x[i]) % 10;
+	//albo
+	// za pomocą + konwertuje napis przechwujący liczbę (tutaj cyfrę) na liczba
+	// reszta = (+x.charAt(i)) % 10;
+	if ((reszta %2 ) == 0){
+		liczba_cyfr_parzystych++;
+		}
+		else{
+		liczba_cyfr_nieparzystych++;
+}
+}
+	document.write('Liczba cyfr przystych jest równa = ',liczba_cyfr_parzystych, 
+	'<br>', 'Liczba cyfr nieparzystych jest równa = ',liczba_cyfr_nieparzystych);
+	
+}
+	</script>
+
+</body>
+</html>
