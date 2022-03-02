@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>Zadanie</title>
+</head>
+<body>
+
+<script>
+'use strict';
+// Math.floor(Math.random()*(b - a + 1))+a;
+// Math.floor(Math.random()*(b - a + 1)+a);
+let x = Math.floor(Math.random()*(10 - (-10) + 1) + (-10);
+let y = Math.floor(Math.random()*(5 - (-5) + 1) + (-5);
+document.write('Punkt o wspołrzędnych x = ',x,', y = ',y,' leży:<br>');
+if(x == 0){
+if(y == 0){
+document.write('To początek układu');
+}
+else{
+if(y > 0){
+document.write('y+');
+}
+else{
+// tu y < 0
+document.write('y-');
+}
+}
+}
+else{
+if(x > 0){
+if( y == 0){
+document.write('x+');
+}
+else{
+if( y > 0){
+document.write('I');
+}
+else{
+// tu y < 0
+document.write('IV');
+}
+}
+}
+else{
+// tu x < 0
+if(y == 0){
+document.write('x-');
+}
+else{
+if( y > 0){
+document.write('II');
+}
+else{
+// tu y < 0
+document.write('III');
+}
+}
+}
+}
+
+
+</script>
+
+</body>
+</html>
