@@ -1,0 +1,44 @@
+<!doctype HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style></style>
+</head>
+<body>
+<script>
+
+'use strict'
+	let a = -180;
+	let b = 180;
+	let sz = Math.floor(Math.random()*(b-a+1)) +a;
+	document.write(sz);
+	
+	
+		if(sz>0){
+		document.write(" czyli Wschód , ")}
+		if(sz<0){
+		document.write(" czyli Zachód , ")}
+		if(sz == 0){
+		document.write(" Leży na 0 ")}
+		
+	let c =-90;
+	let d = 90;
+	let dl = Math.floor(Math.random()*(d-c+1)) + c;
+	document.write(dl);
+	
+	
+		if(dl>0){
+		document.write(" czyli Północ ")}
+		if(dl<0){
+		document.write(" czyli Południe ")}
+		if(dl == 0){
+		document.write(" Leży na 0 ")}
+		
+
+	
+		
+</script> 
+</body>
+</html> 
+ 
