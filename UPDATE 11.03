@@ -19,16 +19,20 @@ h1,h2{
 	color:white;
 }
 
-.pre_omowienie{
+.p_omowienie{
 	margin-left:1cm;
 	margin-right:1cm;
+	background-color:silver;
+	padding:10px;
+	color:black;
+	
 }
 </style>
 <body>
 
 <h1>Metoda window.confirm</h1>
 
-<pre class='pre_omowienie'>
+<p class='p_omowienie'>
 Wywołanie metody confirm ma postać<br>
 window.confirm ('tu wpisz pytanie dla uzytkownika')<br>
 Pytanie dla użytkownika mozna łamać na linie za pomocą sekwencji:\n.
@@ -39,7 +43,7 @@ W oknie są wyświetlane 2 przyciski OK i Anuluj. W zależności od klikniętego
 metoda zwraca: wartości false(gdy kliknąłeś Anuluj),
 wartość true (gdy kliknąłeś OK)
 Kliknięcie któregokolwiek przycisku zamyka okno.
-</pre>
+</p>
 
 <h2>
 Użycie instrukcji warunkowej if
