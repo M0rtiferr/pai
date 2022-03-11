@@ -3,7 +3,49 @@
 <head>
 <meta charset="utf-8">
 <title>2 okna dialogowe prompt</title>
-<style>	</style>
+<style>	body{
+	margin:0;  
+	padding:0;
+	font-family:'Verdana', 'sans-serif';
+	font-size:14px;
+	color:#d0eb6a;
+	background-color:#000;
+}
+
+h1,h2{
+	text-align:center; 
+	background-image:linear-gradient(to right,grey,black,grey);
+	color:white;
+	margin-left:1cm;
+	margin-right:1cm;
+}
+
+.p_omowienie{
+	margin-left:1cm;
+	margin-right:1cm;
+	background-color:silver;
+	padding:10px;
+	color:black;
+	line-height:1,5em;
+}
+
+.div_temat{
+	background-color:#1f1f1f;
+	border:4px solid grey;
+	margin-left:1cm;
+	margin-right:1cm;
+	padding:10px;
+}
+.wynik{
+	background-color:#333;
+	margin-left:1cm;
+	margin-right:1cm;
+	border-radius:50px;
+	padding:20px;
+	border:2px dotted limegreen;
+	line-height:1,4em;
+	white-space:pre-line;
+}</style>
 <body>
 
 <p class='p_omowienie'>
