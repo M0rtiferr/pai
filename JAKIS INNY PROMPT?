@@ -1,104 +1,103 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang='pl'>
 <head>
-<meta charset="utf-8">
-<title>2 okna dialogowe prompt</title>
-<style>	body{
-	margin:0;  
-	padding:0;
-	font-family:'Verdana', 'sans-serif';
-	font-size:14px;
-	color:#d0eb6a;
-	background-color:#000;
+<meta charset='utf-8'>
+<title>2_3 okno prompt</title> 
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'verdana', sans-serif;
+	font-size: 14pt;
+	background-color: #000;
+	color: #D0EB6A;
 }
-
-h1,h2{
-	text-align:center; 
-	background-image:linear-gradient(to right,grey,black,grey);
-	color:white;
-	margin-left:1cm;
-	margin-right:1cm;
+h1, h2 {
+	text-align: center;
+	background-image: linear-gradient(to right, gray, black, gray);
+	margin-left: 1cm;
+	margin-right: 1cm;
 }
-
-.p_omowienie{
-	margin-left:1cm;
-	margin-right:1cm;
-	background-color:silver;
-	padding:10px;
-	color:black;
-	line-height:1,5em;
-}
-
 .div_temat{
-	background-color:#1f1f1f;
-	border:4px solid grey;
-	margin-left:1cm;
-	margin-right:1cm;
-	padding:10px;
+	background-color: #1F1F1F;
+	border: 4px solid grey;
+	margin-left: 1cm;
+	margin-right: 1cm;
 }
-.wynik{
-	background-color:#333;
-	margin-left:1cm;
-	margin-right:1cm;
-	border-radius:50px;
-	padding:20px;
-	border:2px dotted limegreen;
-	line-height:1,4em;
-	white-space:pre-line;
-}</style>
+.p_omowienie{
+	padding: 10px;
+	background-color: silver;
+	color: black;
+	line-height: 1.4em;
+	margin-left: 1cm;
+	margin-right: 1cm;
+}
+.pre_wynik{
+	margin-left: 1cm;
+	margin-right: 1cm;
+	border-radious: 50px;
+	background-color: #333;
+	padding: 20px;
+	border: 2px dotted lightgreen;
+}
+</style>
+</head>
+
 <body>
+<h1>Metoda window.prompt</h1>
 
-<p class='p_omowienie'>
-Wywołanie metody prompt ma postać<br>
-window.prompt ('tu wpisz powiadomienie dla uzytkownika','początkowa wartość pola tekstowego').<br>
-Polecenie dla użytkownika mozna łamać na linie za pomocą sekwencji:\n.<br>
+<div class=div_temat>
+
+<p class=p_omowienie>
+Wywołanie metody prompt ma postać <br>
+window.prompt ('tu wpisz polecenie dla użytkownika',
+'początkowa wartość pola tekstowego').<br>
+Pytanie do użytkownika można łamać na linie za pomocą sekwencji: \n. <br>
 Nie wstawiaj spacji przed i po \n.
-Wywoławnie metody wyświetla okno w którym jest wypisane powiadomienie dla użytkownika, 
-pole tekstowe z wpisaną albo nie wpisaną wartością początkową.<br>
-W oknie są wyświetlane 2 przyciski OK i Anuluj. W zależności od klikniętego przycisku
-metoda zwraca: wartości null (gdy kliknąłeś OK.)<br>
-Jeśli nic nie wpisałeś w polu tekstowym, to zwraca pusty ciąg znaków który oznaczamy '' albo ""
-Zazwyczaj wywołanie tej metody przypisujemy do zmiennej.
-</p>
-
+Wywołanie metody wyświetla okno w którym jest wypisane polecenie dla użytkownika, 
+pole tekstowe wpisaną albo nie wpisaną wartością początkową.<br>
+W oknie są wyświetlane 2 przyciski OK i Anuluj. 
+W zależności od klikniętego przycisku metoda zwraca: wartości null (gdy kliknąłeś Anuluj), 
+zawartość pola tekstowego (gdy kliknąłeś OK). <br>
+Jeżeli nic nie wpisałeś w polu tekstowym, to zwraca pusty ciąg znaków, 
+który oznaczamy '' albo "".
+Zazwyczaj wywołanie tej metody wpisujemy do zmiennej.
+</p> 
+<h2>
+Wartości zwracane przez metodę prompt
+</h2>
+<pre class=pre_wynik>
 <script>
-
 'use strict';
+let odp = window.prompt('Jakie wartości może zwrócić metoda window.prompt?','xyz');
 
-let odp = window.prompt('Jakie warotści może zwrócić metoda windows.prompt?', 'xyz');
- 
 if(odp == null){
-	window.document.write('Nacisnąłeś Anuluj, odp = ' + odp + '<br>');
-}
-else{
-	if(odp == ''){
-		window.document.write('Nic nie wpisałeś i nacisnąłeś OK, odp = ' + odp + '<br>');
-	}	
-	else{
-		window.document.write('Nacisnąłeś OK, wpisałeś odp = ' + odp +'<br>');	
-	}
+window.document.write('Nacisnąłeś Anuluj , odp = '+odp+'<br>');
+} else {
+ if(odp == ''){
+  window.document.write('Nic nie wpisałeś i nacisnąłeś OK , odp = '+odp+'<br>');
+ } else {
+  window.document.write('Nacisnąłeś OK, wpisałeś odp = '+odp+'<br>');
+ }
 }
 
 switch(odp){
-
-   case null:
-	window.document.write('Nacisnąłeś Anuluj, odp = ' + odp + '<br>');
-	break;
-	
-   case ' ':
-	window.document.write('Nic nie wpisałeś i nacisnąłeś OK, odp = ' + odp + '<br>');
-	break;
-	
-   case 'pies':
-    window.document.write('Wpisałeś pies');
-	break;
-	
-   default:
-    window.document.write('Nacisnąłeś OK, wpisałeś odp = ' + odp + '<br>');
-	break;
+	case null:
+	 window.document.write('Nacisnąłeś Anuluj , odp = '+odp+'<br>');
+	 break;
+	case '':
+	 window.document.write('Nic nie wpisałeś i nacisnąłeś OK , odp = '+odp+'<br>');
+	 break;
+	case 'pies':
+	 window.document.write('Wpisałeś pies');
+	 break;
+	default:
+	 window.document.write('Nacisnąłeś OK, wpisałeś odp = '+odp+'<br>');
+	 break;
 }
-
 </script>
-
+</pre>
+</div>
+<br>
 </body>
 </html>
