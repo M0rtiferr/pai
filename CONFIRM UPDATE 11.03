@@ -67,9 +67,9 @@ wartość true (gdy kliknąłeś OK)
 Kliknięcie któregokolwiek przycisku zamyka okno.
 </p>
 
-<h2>
+<p class='p_omowienie'>
 Użycie instrukcji warunkowej if
-</h2>
+</p>
 
 <pre class='wynik'>
 
@@ -87,9 +87,10 @@ if(odp == true){
 }
 </script>
 </pre>
-<h2>
+<p class='p_omowienie'>
 Użycie instrukcji switch
-</h2>
+</p>
+
 <pre class='wynik'>
 <script>
 {
@@ -105,6 +106,7 @@ Użycie instrukcji switch
 	}
 }
 </script>
+
 </pre>
 </div>
 <br>
