@@ -17,6 +17,8 @@ h1,h2{
 	text-align:center; 
 	background-image:linear-gradient(to right,grey,black,grey);
 	color:white;
+	margin-left:1cm;
+	margin-right:1cm;
 }
 
 .p_omowienie{
@@ -41,7 +43,7 @@ h1,h2{
 	margin-right:1cm;
 	border-radius:50px;
 	padding:20px;
-	border:2px dotted #d0eb6a;
+	border:2px dotted limegreen;
 	line-height:1,4em;
 	white-space:pre-line;
 }
@@ -52,7 +54,6 @@ h1,h2{
 
 <div class='div_temat'>
 	
-
 <p class='p_omowienie'>
 Wywołanie metody confirm ma postać<br>
 window.confirm ('tu wpisz pytanie dla uzytkownika')<br>
