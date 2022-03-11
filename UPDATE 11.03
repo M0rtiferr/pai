@@ -35,6 +35,11 @@ h1,h2{
 	margin-right:1cm;
 	padding:10px;
 }
+.wynik{
+	margin-left:1cm;
+	margin-right:1cm;
+	border-radius:50px;
+}
 </style>
 <body>
 
@@ -59,6 +64,9 @@ Kliknięcie któregokolwiek przycisku zamyka okno.
 <h2>
 Użycie instrukcji warunkowej if
 </h2>
+
+<pre class='wynik'>
+
 <script>
 {
 'use strict';
@@ -72,9 +80,11 @@ if(odp == true){
 }
 }
 </script>
+</pre>
 <h2>
 Użycie instrukcji switch
 </h2>
+<pre class='wynik'>
 <script>
 {
 	'use strict';
@@ -89,6 +99,7 @@ Użycie instrukcji switch
 	}
 }
 </script>
+</pre>
 </div>
 <br>
 </body>
