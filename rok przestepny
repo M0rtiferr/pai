@@ -31,6 +31,17 @@ h1,h2,h3, .ol_bez, .ol_w1, .p_omowienie,.pre_script, .pre_wynik, #p_ja{
 	border-radius:50px;
 }
 </style>
+<script>
+let r = Math.floor(Math.Random()*(2022-1583+1)+1583);
+	
+	if((r % 4 == 0) && ((r % 100 =0) && (r % 400 = 0)) == false ){
+		document.write('rok jest przestepny');
+	}
+	else{
+		document.write('rok jest nieprzestepny');
+	}
+	
+</script>
 <body>
 
 <h1>Rok przestępny</h1>
