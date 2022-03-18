@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+<meta charset='utf-8'>
+<title>rok przestępny</title> 
+<style>
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'verdana', sans-serif;
+    background-color: #000;
+	color:#d0eb6a;
+	min-height: 100vh;
+	font-size:14pt;
+}
+.div_temat{
+	background-color:#1f1f1f;
+	border:4px solid gray;
+	margin-left:1cm;
+	margin-right:1cm;
+	padding:10px;
+}
+h1,h2,h3{
+	text-align:center;
+	background-image:linear-gradient(to right,gray,black,gray);
+}
+h1,h2,h3, .ol_bez, .ol_w1, .p_omowienie,.pre_script, .pre_wynik, #p_ja{
+	margin-left:1cm;
+	margin-right:1cm;
+	border-radius:50px;
+}
+</style>
+<body>
+
+<h1>Rok przestępny</h1>
+<div class='div_temat'>
+	<p class='p_omowienie'>
+	Na egzaminie maturalnym z informatyki podano następujące kryterium:<br>
+	Rok R &gt; 1582 jest przestępny gdy R dzieli się bez reszty przez 4 z wyłączeniem tych lat, które dzielą się przez 100 i nie dzielą się przez 400.
+	</p>
+</div>
+</body>
+</html>
