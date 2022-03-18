@@ -39,6 +39,11 @@ h1,h2,h3, .ol_bez, .ol_w1, .p_omowienie,.pre_script, .pre_wynik, #p_ja{
 	Na egzaminie maturalnym z informatyki podano następujące kryterium:<br>
 	Rok R &gt; 1582 jest przestępny gdy R dzieli się bez reszty przez 4 z wyłączeniem tych lat, które dzielą się przez 100 i nie dzielą się przez 400.
 	</p>
+	
+	<p class='p_omowienie'>
+	Wylosuj rok Rok R z &lt;1583, 2022&gt; i określ na podstawie podanego wyżej kryterium czy jest przestępny czy nie.
+	</p>
+	
 </div>
 </body>
 </html>
