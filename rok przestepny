@@ -74,47 +74,44 @@ h1, h2{
 	border:purple;
 }
 
-
 </style>
-
 <body>
-
 <h1>Rok przestępny</h1>
 <div class='div_temat'>
+<!--
+	<p class='p_omowienie'>
+	Na egzaminie maturalnym z informatyki podano następujące kryterium:<br>
+	Rok R &gt; 1582 jest przestępny gdy R dzieli się bez reszty przez 4 z wyłączeniem tych lat, które dzielą się przez 100 i nie dzielą się przez 400.
+	</p>
+	-->
+		<ol class="ol_bez">
+			<li> Przyjmujemy, że:<br><br> 
+				<ol class="ol_w1">
+					<li> rok z &lt; 1,1582&gt; jest przestępny, gdy dzieli się bez reszty przez 4,</li>
+					<li>rok &gt;= 1583 jest przestępny, gdy rok dzieli się bez reszty przez 4 z wyłączeniem tych lat, które dzielą się przez 100 i nie dzielą się przez 400.
+				</ol>
+			<br></li>
+		</ol>
 		
-	<ol class="ol_bez">
-		
-		<li><br>Przyjmujemy, że:<br><br>
-			<ol class="ol_w1">
-				<li>rok z &lt;1,1582&gt; jest przestępny gdy dzieli się bez reszty przez 4,</li>
-				<li>rok &gt;= 1583 jest przestępny gdy dzieli się przez 4 z wyłączeniem tych lat, które dzielą się przez 100 i nie dzielą się przez 400.</li>
-			</ol>		
-	<br></li>
-		
-	</ol>
-
+	
 	<p class='p_omowienie'>
 	Wylosuj Rok R z &lt;1583, 2022&gt; i określ na podstawie podanego wyżej kryterium czy jest przestępny czy nie.
 	</p>
 	
-</div><br>
+</div>
+<br>
 <pre class="pre_wynik">
 <script>
-'use strict'
+'use strict';
 function f1_1(r){
-	
+
 }
 let r, licznik;
-for(licznik = 1, licznik<=5, licznik++);
+for(licznik=1; licznik<=5; licznik ++){
 	r = Math.floor(Math.random()*(2022-1+1)+1);
-	window.document.write(r,'<br>');/*                                                     
-	if((r % 4 == 0) && ((r % 100 =0) && (r % 400 = 0)) == false ){
-		document.write('rok jest przestepny');
-	}
-	else{
-		document.write('rok jest nieprzestepny');
-	}
-	*/
+	window.document.write(r, '<br>');
+}
+
 </script>
 </pre>
 </body>
