@@ -67,26 +67,44 @@ h1, h2{
 	margin-right:1cm;
 	padding-left:0cm;
 	line-height:1.4em;
+}
+
+.pre_wynik{
+	background-color:#000;
+	border:dotted lightgreen 2px;
+	padding:20px;
+	line-height:1.4em;
+	white-space:pre-line;
+	}
+	
+.pre_wynik: hover{
+	border:purple;
+}
+
+
+</style>
+<pre class="pre_wynik">
+<script>
+'use strict'
+function f1_1(r){
 
 }
 
-</style>
-<script>
 let r = Math.floor(Math.Random()*(2022-1583+1)+1583);
-	
+	                                                       
 	if((r % 4 == 0) && ((r % 100 =0) && (r % 400 = 0)) == false ){
 		document.write('rok jest przestepny');
 	}
 	else{
 		document.write('rok jest nieprzestepny');
 	}
-	
+
 </script>
+</pre>
 <body>
 
 <h1>Rok przestępny</h1>
 <div class='div_temat'>
-
 		
 	<ol class="ol_bez">
 		
@@ -98,9 +116,7 @@ let r = Math.floor(Math.Random()*(2022-1583+1)+1583);
 	<br></li>
 		
 	</ol>
-		
-		
-		
+
 	<p class='p_omowienie'>
 	Wylosuj Rok R z &lt;1583, 2022&gt; i określ na podstawie podanego wyżej kryterium czy jest przestępny czy nie.
 	</p>
