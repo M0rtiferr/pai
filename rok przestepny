@@ -104,13 +104,17 @@ h1, h2{
 <script>
 'use strict';
 function f1_1(r){
-
+	return r;
 }
 let r, licznik;
 for(licznik=1; licznik<=5; licznik ++){
 	r = Math.floor(Math.random()*(2022-1+1)+1);
 	window.document.write(r, '<br>');
 }
+
+r = Math.floor(Math.random()*(2022-1+1)+1);
+	window.document.write(r);
+
 
 </script>
 </pre>
