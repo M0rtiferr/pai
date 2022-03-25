@@ -41,7 +41,7 @@ h1, h2{
 .pre_wynik{
 	margin-right:1cm;
 	margin-left:1cm;
-	border-radius: 50px;
+	
 	background-color: #000;
 	padding: 20px;
 	border:2px dotted lime;
@@ -70,8 +70,8 @@ h1, h2{
 }
 
 	
-.pre_wynik: hover{
-	border:purple;
+.pre_wynik:hover{
+	border-color:purple;
 }
 
 </style>
@@ -104,18 +104,33 @@ h1, h2{
 <script>
 'use strict';
 function f1_1(r){
+	let odptak=' Jest przestępny';
+	let odpnie=' Nie jest przestępny',odpblad=' Zły zakres';
+	if(r<=1582){
+		if(r%4==0){
+			return r+odptak;
+		}else{
+			return r+odpnie;
+		}
+	}
+	
 	return r;
 }
-let r, licznik;
-for(licznik=1; licznik<=5; licznik ++){
-	r = Math.floor(Math.random()*(2022-1+1)+1);
-	window.document.write(r, '<br>');
+let r,licznik;
+for(licznik=1;licznik<=4;licznik++){
+	r=Math.floor(Math.random()*(2022-1+1)+1);
+	window.document.write(f1_1(r),'<br>');
 }
+	r=Math.floor(Math.random()*(2022-1+1)+1);
+	window.document.write(f1_1(r));
 
-r = Math.floor(Math.random()*(2022-1+1)+1);
-	window.document.write(r);
-
-
+/*
+if((r%4==0) && ((r%100==0) && (r%400!=0)) ==false){
+	document.write("Rok jest przestępny.")
+}else{
+	document.write("Rok nie jest przestępny.")
+}
+*/
 </script>
 </pre>
 </body>
