@@ -105,18 +105,21 @@ h1, h2{
 'use strict';
 function f1_1(r){
 	let odptak=' Jest przestępny';
-	let odpnie=' Nie jest przestępny',odpblad=' Zły zakres';
+	let odpnie=' Nie jest przestępny', odpblad='błąd';
 	if(r<=1582){
 		if(r%4==0){
 			return r+odptak;
 		}else{
 			return r+odpnie;
 		}
+		
+	}else{
+		if((r%4 == 0) && !((r% 100 == 0 ) && (r %400 !=0)) ){
 	}
-	
+}
 	return r;
 }
-let r,licznik;
+var r,licznik;
 for(licznik=1;licznik<=4;licznik++){
 	r=Math.floor(Math.random()*(2022-1+1)+1);
 	window.document.write(f1_1(r),'<br>');
@@ -124,13 +127,7 @@ for(licznik=1;licznik<=4;licznik++){
 	r=Math.floor(Math.random()*(2022-1+1)+1);
 	window.document.write(f1_1(r));
 
-/*
-if((r%4==0) && ((r%100==0) && (r%400!=0)) ==false){
-	document.write("Rok jest przestępny.")
-}else{
-	document.write("Rok nie jest przestępny.")
-}
-*/
+
 </script>
 </pre>
 </body>
