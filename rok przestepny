@@ -74,6 +74,15 @@ h1, h2{
 	border-color:purple;
 }
 
+.span_nie{
+	color:royalblue;
+}
+
+.span_tak{
+	color:springgreen;
+}
+
+
 </style>
 <body>
 <h1>Rok przestępny</h1>
@@ -104,8 +113,8 @@ h1, h2{
 <script>
 'use strict';
 function f1_1(r){
-	let odptak=' Jest przestępny';
-	let odpnie=' Nie jest przestępny', odpblad='błąd';
+	let odptak=' <span class=\'span_tak\'> jest przestępny</span>';
+	let odpnie=' <span class=\'span_nie\'> nie jest przestepny</span>';
 	if(r<=1582){
 		if(r%4==0){
 			return r+odptak;
@@ -113,12 +122,17 @@ function f1_1(r){
 			return r+odpnie;
 		}
 		
-	}else{
+	}
+	else{
 		if((r%4 == 0) && !((r% 100 == 0 ) && (r %400 !=0)) ){
+		   return r+odptak;
+		}
+		else{
+		   return r+odpnie;
+		}
 	}
 }
-	return r;
-}
+
 var r,licznik;
 for(licznik=1;licznik<=4;licznik++){
 	r=Math.floor(Math.random()*(2022-1+1)+1);
