@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>prompt</title>
+<style></style>
+<body>
+
+<script>
+
+'use strict';
+
+let odp;
+isNaN(odp)
+do{
+	odp = prompt('Musisz wpisać liczbe z ułamkiem: ');
+	if((odp != '') && (odp != null) && (!isNaN(odp)) && (odp.indexOf('.',0) - 1 )){
+	if((odp != '') && (odp != null) && (!isNaN(odp)) && (odp.indexOf('.',0) >= 0)){
+		break;
+	}
+}while(true)
+
+window.document.write('Wpisałes '+odp);
+
+</script>
+
+</body>
+</html>
+ 
