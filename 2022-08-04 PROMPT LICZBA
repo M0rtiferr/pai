@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>prompt</title>
+<style></style>
+<body>
+
+<script>
+
+'use strict';
+
+let odp;
+isNaN(odp)
+do{
+	odp = prompt('Musisz wpisać liczbe: ');
+	if((odp != '') && (odp != null) &&(isNaN(odp) == false)){
+		break;
+	}
+}while(true)
+
+window.document.write('Wpisałes '+odp);
+
+</script>
+
+</body>
+</html>
+ 
