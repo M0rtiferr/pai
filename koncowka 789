@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>prompt</title>
+<style></style>
+<body>
+
+<script>
+
+'use strict';
+
+let odp;
+
+do{
+	odp = window.prompt('Musisz wpisać liczbe z końcówką 789 ');
+	if((odp !="") && (odp != null) && (isNaN(odp) == false) && (odp.indexOf('.',0) == -1) && (odp.length >= 3) && (odp.indexOf('789', odp.length-3) !=-1)){
+		break;
+	}
+}while(true)
+
+window.document.write('Wpisałes '+odp);
+
+</script>
+
+</body>
+</html>
+ 
