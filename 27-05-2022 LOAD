@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset='utf-8'>
+<title> </title>
+<style>
+#input1{
+	background-color: red;
+}
+</style>
+</head>
+<script>
+'use strict'
+function f_e_input1_click(){
+	this.value="Hahaha";
+	this.style.border="2mm solid green";
+}
+function f_load(){
+//alert(this)
+let e_input1=window.document.getElementById('input1');
+//alert(e_input1);
+e_input1.addEventListener('click', f_e_input1_click);
+}
+window.addEventListener('load',f_load);
+</script>
+<body>
+<p>Pokazuje jak przeprowadzić obsługę zdarzenia load i obsługę kliknięcia przycisku. Po kliknięciu przycisku zmienię napis na przycisku (wartość atrybutu value) i jego obramowanie (wartość właściwości CSS - border). </p>
+ 
+<p>
+<input type = 'button' id="input1" value = "Kliknij mnie">
+</p>
+ 
+</body>
+</html>
